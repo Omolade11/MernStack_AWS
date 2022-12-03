@@ -137,5 +137,11 @@ The output displayed in the image below shows that everything went well
 Now, we need to open this port in EC2 Security Groups. Go to the security group of our instance. There we will create an inbound rule to open TCP port 5000 like this:
 
 We will edit the inbound rule of the security group of the instance by adding the last rule in the image below.
-![]()
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-03%20at%2004.33.01.png)
 
+Open upyour browser and try to access our server’s Public IP or Public DNS name followed by port 5000:
+```
+http://<PublicIP-or-PublicDNS>:5000
+```
+This is the result we got.
+![]()

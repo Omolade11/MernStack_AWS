@@ -132,5 +132,10 @@ Now it is time to start our server to see if it works. We will open your termina
 node index.js
 ```
 The output displayed in the image below shows that everything went well
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-03%20at%2004.23.09.png)
+
+Now, we need to open this port in EC2 Security Groups. Go to the security group of our instance. There we will create an inbound rule to open TCP port 5000 like this:
+
+We will edit the inbound rule of the security group of the instance by adding the last rule in the image below.
 ![]()
 

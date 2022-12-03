@@ -144,4 +144,4 @@ Open upyour browser and try to access our server’s Public IP or Public DNS nam
 http://<PublicIP-or-PublicDNS>:5000
 ```
 This is the result we got.
-![]()
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-03%20at%2004.36.55.png)

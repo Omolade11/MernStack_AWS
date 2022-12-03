@@ -78,4 +78,59 @@ Next, we will use the command npm init to initialise our project, so that a new 
 ```
 npm init
 ```
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-03%20at%2004.03.18.png)
+
+We will run the command ls to confirm that we have package.json file created.
+Next, we will Install ExpressJs and create the Routes directory.
+
+## INSTALLING EXPRESSJS
+Express is a framework for Node.js, therefore a lot of things developers would have programmed is already taken care of out of the box. Therefore, it simplifies development, and abstracts a lot of low-level details. For example, Express helps to define routes of your application based on HTTP methods and URLs.
+
+To use express, we will install it using npm:
+```
+npm install express
+```
+We will create a file index.js with the command below
+```
+touch index.js
+```
+We will run ls to confirm that our index.js file is successfully created
+### Install the dotenv module
+```
+npm install dotenv
+```
+Open the index.js file with the command below
+```
+vim index.js
+```
+Type the code below into it and save. 
+```const express = require('express');
+require('dotenv').config();
+ 
+const app = express();
+ 
+const port = process.env.PORT || 5000;
+ 
+app.use((req, res, next) => {
+res.header("Access-Control-Allow-Origin", "\*");
+res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+next();
+});
+ 
+app.use((req, res, next) => {
+res.send('Welcome to Express');
+});
+ 
+app.listen(port, () => {
+console.log(`Server running on port ${port}`)
+});
+```
+Notice that we have specified to use port 5000 in the code. This will be required later when we go on the browser.
+Use: w to save in vim and use: qa to exit vim
+Now it is time to start our server to see if it works. We will open your terminal in the same directory as our index.js file and type:
+```
+node index.js
+```
+The output displayed in the image below shows that everything went well
 ![]()
+

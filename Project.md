@@ -700,6 +700,8 @@ monospace;
 When we are in the Todo directory, we will run:
 ```npm run dev```
 Assuming no errors when saving all these files, our To-Do app should be ready and fully functional with the functionality discussed earlier: creating a task, deleting a task and viewing all our tasks.
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2011.30.37.png)
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2011.31.07.png)
 
 
 

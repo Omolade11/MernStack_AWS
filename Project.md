@@ -263,7 +263,9 @@ The next piece of our application will be the MongoDB Database.
 
 ## MongoDB Database
 We need a database where we will store our data. For this, we will make use of mLab. 
-mLab provides MongoDB database as a service solution (DBaaS), so to make life easy, we will need to sign up for shared clusters free account(https://www.mongodb.com/atlas-signup-from-mlab), which is ideal for our use case. We will sign up and also select AWS as the cloud provider, and choose a region near near us.
-We will complete the get started quick guide Then we allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing). We will also change the time of deleting the entry from 6 Hours to 1 Week. The end result should look like this
-![]()
+mLab provides MongoDB database as a service solution (DBaaS), so to make life easy, we will need to sign up for shared clusters free account(https://www.mongodb.com/atlas-signup-from-mlab), which is ideal for our use case. 
+1. We will sign up and also select AWS as the cloud provider, and choose a region near near us.
+2. We will complete the get started quick guide Then we allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing). We will also change the time of deleting the entry from 6 Hours to 1 Week. The end result should look like this
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2011.40.19.png)
+3. Create a MongoDB database and collection inside mLab
 

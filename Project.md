@@ -334,7 +334,18 @@ console.log(`Server running on port ${port}`)
 Start our server using the command:
 ```node index.js```
 We will see a message ‘Database connected successfully’ 
-![]()
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2009.12.41.png)
+This means we have our backend configured. Now we are going to test it.
+
+So far we have written the backend part of our To-Do application, and configured a database, but we do not have a frontend UI yet. We need ReactJS code to achieve that. But during development, we will need a way to test our code using RESTful API. Therefore, we will need to make use of some API development client to test our code.
+
+we will use [Postman](https://www.getpostman.com/) to test our API.
+Click [Install Postman](https://www.getpostman.com/downloads/) to download and install postman on your machine.
+Click [HERE](https://www.youtube.com/watch?v=FjgYtQK_zLE) to learn how perform [CRUD operartions](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) on Postman.
+We should test all the API endpoints and make sure they are working. For the endpoints that require body, we should send JSON back with the necessary fields since it’s what we setup in our code.
+Now we will open our Postman, create a POST request to the API ```http://<PublicIP-or-PublicDNS>:5000/api/todos```. This request sends a new task to our To-Do list so the application could store it in the database.
+Note: make sure your set header key Content-Type as application/json
+ 
 
 
 

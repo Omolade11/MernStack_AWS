@@ -280,14 +280,55 @@ vi .env
 DB = 'mongodb+srv://<username>:<password>@<network-address>/<dbname>?retryWrites=true&w=majority'
 ```
 Ensure to update ```<username>, <password>, <network-address> and <database>``` according to your setup.
-
-6. Here is how to get your connection string 
+Here is how to get your connection string 
 ![](https://github.com/TobiOlajumoke/DevOps-Projects/blob/main/Project_3/Image/DB%20connect.png)
 ![](https://github.com/TobiOlajumoke/DevOps-Projects/blob/main/Project_3/Image/MongoDB_connect.png)
 ![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2008.54.53.png)
-our .env file should look like the below
-![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2009.05.28.png)
-
+6. Now we need to update the index.js to reflect the use of ```.env``` so that Node.js can connect to the database.
+Simply delete existing content in the file, and update it with the entire code below.
+To do that using vim, we will open the file with ```vim index.js```, Press esc, Type :, Type %d and Hit ‘Enter’.
+The entire content will be deleted, then,
+Press i to enter the insert mode in vim
+Now, paste the entire code below in the file.
+```
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const routes = require('./routes/api');
+const path = require('path');
+require('dotenv').config();
+ 
+const app = express();
+ 
+const port = process.env.PORT || 5000;
+ 
+//connect to the database
+mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
+.then(() => console.log(`Database connected successfully`))
+.catch(err => console.log(err));
+ 
+//since mongoose promise is depreciated, we overide it with node's promise
+mongoose.Promise = global.Promise;
+ 
+app.use((req, res, next) => {
+res.header("Access-Control-Allow-Origin", "\*");
+res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+next();
+});
+ 
+app.use(bodyParser.json());
+ 
+app.use('/api', routes);
+ 
+app.use((err, req, res, next) => {
+console.log(err);
+next();
+});
+ 
+app.listen(port, () => {
+console.log(`Server running on port ${port}`)
+});
+```
 
 
 

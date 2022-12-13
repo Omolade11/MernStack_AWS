@@ -285,5 +285,8 @@ Ensure to update ```<username>, <password>, <network-address> and <database>``` 
 ![](https://github.com/TobiOlajumoke/DevOps-Projects/blob/main/Project_3/Image/DB%20connect.png)
 ![](https://github.com/TobiOlajumoke/DevOps-Projects/blob/main/Project_3/Image/MongoDB_connect.png)
 ![]()
+We will update our env with the following
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2009.05.28.png)
+
 
 

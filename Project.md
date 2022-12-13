@@ -343,9 +343,15 @@ we will use [Postman](https://www.getpostman.com/) to test our API.
 Click [Install Postman](https://www.getpostman.com/downloads/) to download and install postman on your machine.
 Click [HERE](https://www.youtube.com/watch?v=FjgYtQK_zLE) to learn how perform [CRUD operartions](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) on Postman.
 We should test all the API endpoints and make sure they are working. For the endpoints that require body, we should send JSON back with the necessary fields since it’s what we setup in our code.
-Now we will open our Postman, create a POST request to the API ```http://<PublicIP-or-PublicDNS>:5000/api/todos```. This request sends a new task to our To-Do list so the application could store it in the database.
+1. Now we will open our Postman, create a POST request to the API ```http://<PublicIP-or-PublicDNS>:5000/api/todos```. This request sends a new task to our To-Do list so the application could store it in the database.
 Note: make sure your set header key Content-Type as application/json
- 
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2010.31.26.png)
+We can add this value as the body
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2010.31.50.png)
+2. We will create a GET request to our API on ```http://<PublicIP-or-PublicDNS>:5000/api/todos```. This request retrieves all existing records from out To-do application (backend requests these records from the database and sends it us back as a response to GET request). The image below shows our GET request and the value we derived.
+![]()
+
+
 
 
 

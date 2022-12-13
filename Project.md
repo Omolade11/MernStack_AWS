@@ -376,7 +376,24 @@ In Todo folder, we will open the package.json file and thereafter change the hig
 ```
 ![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2011.02.13.png)
 The end result should look like the image below:
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2011.04.51.png)
+
+### Configure Proxy in ```package.json```
+1. Change directory to ‘client’
+```cd client```
+2. Open the package.json file
+```vi package.json```
+3. Add the key value pair in the package.json file ```"proxy": "http://localhost:5000"```. Like in the image below
 ![]()
+The whole purpose of adding the proxy configuration in number 3 above is to make it possible to access the application directly from the browser by simply calling the server url like http://localhost:5000 rather than always including the entire path like http://localhost:5000/api/todos
+4. Now, we have to ensure we are inside the Todo directory, and simply do:
+```npm run dev```
+Our app should open and start running on localhost:3000
+Important note: In order to be able to access the application from the Internet we have to open TCP port 3000 on EC2 by adding a new Security Group rule. 
+Creating your React Components
+One of the advantages of react is that it makes use of components, which are reusable and also make code modular. For our Todo app, there will be two stateful components 
+
+
 
 
 

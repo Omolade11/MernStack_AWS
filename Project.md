@@ -267,5 +267,23 @@ mLab provides MongoDB database as a service solution (DBaaS), so to make life ea
 1. We will sign up and also select AWS as the cloud provider, and choose a region near near us.
 2. We will complete the get started quick guide Then we allow access to the MongoDB database from anywhere (Not secure, but it is ideal for testing). We will also change the time of deleting the entry from 6 Hours to 1 Week. The end result should look like this
 ![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2011.40.19.png)
-3. Create a MongoDB database and collection inside mLab
+3. Create a MongoDB database and collection inside mLab by clicking on "add my own data" like in the image below
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2008.37.11.png)
+4. In the ```index.js``` file, we specified ```process.env``` to access environment variables, but we have not yet created this file. So we need to do that now.
+Create a file in your Todo directory and name it .env. 
+```
+touch .env
+vi .env
+```
+5. Add the connection string to access the database in the .env file created above, just as below:
+```
+DB = 'mongodb+srv://<username>:<password>@<network-address>/<dbname>?retryWrites=true&w=majority'
+```
+Ensure to update ```<username>, <password>, <network-address> and <database>``` according to your setup.
+
+6. Here is how to get your connection string 
+![](https://github.com/TobiOlajumoke/DevOps-Projects/blob/main/Project_3/Image/DB%20connect.png)
+![](https://github.com/TobiOlajumoke/DevOps-Projects/blob/main/Project_3/Image/MongoDB_connect.png)
+![]()
+
 

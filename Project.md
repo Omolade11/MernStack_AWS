@@ -374,6 +374,8 @@ In Todo folder, we will open the package.json file and thereafter change the hig
 "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
 },
 ```
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2011.02.13.png)
+The end result should look like the image below:
 ![]()
 
 

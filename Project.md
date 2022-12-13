@@ -348,8 +348,10 @@ Note: make sure your set header key Content-Type as application/json
 ![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2010.31.26.png)
 We can add this value as the body
 ![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2010.31.50.png)
-2. We will create a GET request to our API on ```http://<PublicIP-or-PublicDNS>:5000/api/todos```. This request retrieves all existing records from out To-do application (backend requests these records from the database and sends it us back as a response to GET request). The image below shows our GET request and the value we derived.
-![]()
+The image below shows the result of our POST request
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2010.32.07.png)
+2. We will create a GET request to our API on ```http://<PublicIP-or-PublicDNS>:5000/api/todos```. This request retrieves all existing records from out To-do application (backend requests these records from the database and sends it us back as a response to GET request). The image below shows our GET request and the result we derived.
+![](https://github.com/Omolade11/MernStack_AWS/blob/main/Images/Screenshot%202022-12-13%20at%2010.42.04.png)
 
 
 

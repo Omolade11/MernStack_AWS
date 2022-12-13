@@ -580,6 +580,7 @@ return (
 export default App;
 ```
 After pasting, exit the editor.
+
 6. In the src directory open the App.css
 ```vi App.css```
 Then paste the following code into App.css:
@@ -673,6 +674,7 @@ margin-top: 0;
 }
 ```
 Exit
+
 7. In the src directory open the index.css
 ```vim index.css```
 Copy and paste the code below:

@@ -330,5 +330,12 @@ console.log(`Server running on port ${port}`)
 });
 ```
 
+7. Using environment variables to store information is considered more secure and best practice to separate configuration and secret data from the application, instead of writing connection strings directly inside the index.js application file.
+Start our server using the command:
+```node index.js```
+We will see a message ‘Database connected successfully’ 
+![]()
+
+
 
 
